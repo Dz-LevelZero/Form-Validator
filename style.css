@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen&display=swap');
+
+
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: 'Sen', sans-serif;
+  letter-spacing: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background:#3C0D99;
+}
+
+.container {
+  width: 480px;
+  height: 630px;
+  background:#FFFFFF ;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px ;
+  box-shadow: 0px 5px 30px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Form */
+form {
+  width: 90%;
+}
+
+.form-group {
+  height: 65px;
+}
+
+label {
+  position: relative;
+  bottom: 3px;
+}
+
+input {
+  width: 100%;
+  height: 34px;
+  padding: 5px;
+  border: 1px solid black;
+  border-radius: 5px;
+  outline: none;
+  background: #EDF2F7;
+  box-sizing: border-box;
+  transition: all 0.3s;
+}
+
+input:valid {
+  border: 1px solid green;
+}
+input:invalid {
+  border: 1px solid red;
+}
+input:focus {
+  background: #FFFFFF;
+  transform: scale(1.03);
+}
+
+button {
+  cursor: pointer;
+  color: #EDF2F7;
+  background: #6415FF;
+  border: none;
+  border-radius: 5px;
+  height: 50px;
+  width: 100%;
+  font-family: Sen, sans-serif;
+  letter-spacing: 2px;
+  margin-top: 5px;
+  font-weight: 600;
+  font-size: 100%;
+}
+
+button:hover {
+  background: #3C0D99;
+  transform: scale(1.02);
+}
+button:focus {
+  outline: none;
+}
+
+.message-container {
+  border: 1px solid #6415FF;
+  border-radius: 5px;
+  width: 90%;
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  color: #6415FF;
+  font-size: 100%;
+}
